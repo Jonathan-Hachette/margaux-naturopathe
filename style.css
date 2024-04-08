@@ -476,7 +476,7 @@ video {
 
 .card__price {
   font-weight: bold;
-  padding: 0 2% 10% 2% ;
+  padding: 0 2% 10% 1% ;
 }
 
 
@@ -1124,8 +1124,11 @@ html {
     
 }
 
-/* Test */
 
+  
+
+
+/* Test */
 
 
 
