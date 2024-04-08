@@ -424,11 +424,12 @@ video {
 .card__content {
   display: grid;
   gap: 2dvh;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
 }
 
 .card__content p {
   font-size: clamp(0.725rem, 1rem, 1.125rem);
+  padding: 0 2%;
 }
 
 .card__container1 {
@@ -439,7 +440,7 @@ video {
   box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2),
               0 0 2px 0 rgba(0, 0, 0, 0.19);
   width: clamp(50%, 70vw, 80%) ;  
-  height: 80vh;
+  height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
   grid-area: 2 / 1;
@@ -453,7 +454,7 @@ video {
   box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2),
               0 0 2px 0 rgba(0, 0, 0, 0.19);
   width: clamp(50%, 70vw, 80%) ;  
-  height: 80vh;
+  height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
   grid-area: 2 / 2;
@@ -467,14 +468,15 @@ video {
   box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2),
               0 0 2px 0 rgba(0, 0, 0, 0.19);
   width: clamp(50%, 70vw, 80%) ;  
-  height: 80vh;
+  height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
   grid-area: 2 / 3;
 }
 
 .card__price {
-  padding: 2vh;
+  font-weight: bold;
+  padding: 0 2% 10% 2% ;
 }
 
 
@@ -493,9 +495,7 @@ video {
 
 
 
-.card__price {
-    font-weight: bold;
-}
+
 
 /* Section-services */
 
@@ -1124,11 +1124,8 @@ html {
     
 }
 
-
-  
-
-
 /* Test */
+
 
 
 
