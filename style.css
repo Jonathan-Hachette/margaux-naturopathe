@@ -12,14 +12,14 @@
 }
 
 html {
-  font-size:16px
+  font-size: 16px;
 }
 
 body {
-    background: var(--background);
-    color: var(--texts);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  background: var(--background);
+  color: var(--texts);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 main {
@@ -40,7 +40,6 @@ h1 {
   letter-spacing: 8px;
   font-size: clamp(1.5rem, 4vw, 3rem);
   padding: 3% 0;
-
 }
 
 h2 {
@@ -48,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1rem, 1.8vw, 1.50rem);
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
   padding: 10% 2%;
 }
 
@@ -57,8 +56,6 @@ p {
   font-size: clamp(1rem, 2.5vw, 1.125rem);
   line-height: clamp(1.2em, 2.5vw, 1.5em);
 }
-
-
 
 ul {
   list-style-type: none;
@@ -112,9 +109,9 @@ header {
 /* CSS permettant de rendre lisible le header 
 lorsqu'il passe sur l'image de la section intro */
 header.scrolled {
-    background-color: var(--background);
-    opacity: 0.9;
-    transition: 0.6s;
+  background-color: var(--background);
+  opacity: 0.9;
+  transition: 0.6s;
 }
 
 header.scrolled a {
@@ -122,10 +119,10 @@ header.scrolled a {
 }
 
 .header_menu.scrolled a:hover {
-    color: #405142;
-    background: linear-gradient(to top, #3d533c 0%, #3d533c 1px, transparent 3px) no-repeat;
-    background-size: 100% 100%;
-    transition: 0.6s;
+  color: #405142;
+  background: linear-gradient(to top, #3d533c 0%, #3d533c 1px, transparent 3px) no-repeat;
+  background-size: 100% 100%;
+  transition: 0.6s;
 }
 
 /* Header */
@@ -152,8 +149,6 @@ video {
   overflow: hidden;
 }
 
-
-
 .bloc-intro h1 {
   font-size: clamp(1.5rem, 5vw, 5rem);
   color: white;
@@ -167,7 +162,7 @@ video {
 }
 
 .btn_rdv {
-    text-align: right;
+  text-align: right;
 }
 
 .btn_rdv a {
@@ -185,35 +180,35 @@ video {
 }
 
 .separator {
-    width: 0;
-    height: 0;
-    border-right: 100vw solid transparent;
-    border-bottom: 13.1vw solid var(--background);
-    margin-top: -13vw;
-    overflow: hidden;
+  width: 0;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-bottom: 13.1vw solid var(--background);
+  margin-top: -13vw;
+  overflow: hidden;
 }
 
 .icon-container1 {
-    height: 10vh;
-    width: 100vw;
-    position: relative;
+  height: 10vh;
+  width: 100vw;
+  position: relative;
 }
 
-.arrow1{
-    position: absolute;
-    top: 140%;
-    left: 50%;
-    opacity: 0.9;
-    transform: translate(-50%, -50%);
+.arrow1 {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
 }
 /* Section accueil-introduciton */
 
 /* Section-margaux */
 .grid-intro {
-    display: grid;
-    grid-template-columns: auto auto;
-    place-items: center center;
-    column-gap: 8vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center center;
+  column-gap: 8vw;
 }
 
 .section-margaux h1 {
@@ -224,8 +219,7 @@ video {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2),
-  0 0 2px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
   grid-row-start: 2;
   grid-column-start: 1;
   opacity: 0.8;
@@ -236,14 +230,12 @@ video {
   grid-column-start: 2;
 }
 
-
 /* Section-margaux */
 
 /* Section Naturo */
 
 .section-naturo {
   padding-bottom: 5rem;
-
 }
 
 .grid-section-naturo {
@@ -289,8 +281,9 @@ video {
   filter: grayscale(0);
 }
 
-
-.div2, .div4, .div6 {
+.div2,
+.div4,
+.div6 {
   display: flex;
   text-align: center;
   align-self: center;
@@ -300,33 +293,33 @@ video {
 /* Section santé pour tous  */
 
 .section-tous {
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    position: relative;
-    color: white;
-    padding: 8%;
-    margin-bottom: 2%;
-  }
-  
-  .section-tous::before {
-    background-image: url(Images/thicket-tropical-plant.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0.7;
-    z-index: 0;
-  }
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  color: white;
+  padding: 8%;
+  margin-bottom: 2%;
+}
+
+.section-tous::before {
+  background-image: url(Images/thicket-tropical-plant.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.7;
+  z-index: 0;
+}
 
 .section-tous h1 {
   padding-bottom: 40px;
 }
 
-.section-tous div:nth-child(-n+2){
-    isolation: isolate;
+.section-tous div:nth-child(-n + 2) {
+  isolation: isolate;
 }
 
 .liste-trouble {
@@ -341,24 +334,21 @@ video {
   margin-bottom: 2%;
 }
 
-
-
 .icon-container2 {
-    position: absolute;
+  position: absolute;
 }
 
-.arrow2{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 90%;
-    left: 50%;
-    opacity: 0.9;
+.arrow2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 90%;
+  left: 50%;
+  opacity: 0.9;
 }
-
 
 .divlist2 {
   grid-row-start: 3;
-  transition-property: opacity,transform,filter!important;
+  transition-property: opacity, transform, filter !important;
 }
 
 .divlist3 {
@@ -394,7 +384,6 @@ video {
 
 /* Section-services */
 
-
 .section-services {
   box-sizing: border-box;
   display: grid;
@@ -404,17 +393,17 @@ video {
   place-items: center;
   row-gap: 1%;
 
-    & h1 {
-        grid-area: 1 / 2;
-        text-align: center;
-    }
+  & h1 {
+    grid-area: 1 / 2;
+    text-align: center;
+  }
 }
 
 /* Style des cards */
 
 .section-services img {
   opacity: 0.7;
-  width: 100% ;
+  width: 100%;
   height: 55%;
   max-height: 349px;
   object-fit: cover;
@@ -437,9 +426,8 @@ video {
   flex-direction: column;
   text-align: center;
   background-color: var(--cards-btn-form);
-  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2),
-              0 0 2px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(50%, 70vw, 80%) ;  
+  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
+  width: clamp(50%, 70vw, 80%);
   height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
@@ -451,9 +439,8 @@ video {
   flex-direction: column;
   text-align: center;
   background-color: var(--cards-btn-form);
-  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2),
-              0 0 2px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(50%, 70vw, 80%) ;  
+  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
+  width: clamp(50%, 70vw, 80%);
   height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
@@ -465,9 +452,8 @@ video {
   flex-direction: column;
   text-align: center;
   background-color: var(--cards-btn-form);
-  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2),
-              0 0 2px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(50%, 70vw, 80%) ;  
+  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
+  width: clamp(50%, 70vw, 80%);
   height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
@@ -476,347 +462,363 @@ video {
 
 .card__price {
   font-weight: bold;
-  padding: 0 2% 10% 2% ;
+  padding: 0 2% 10% 2%;
 }
 
-
-.card__container1:hover, .card__container2:hover, .card__container3:hover {
-    animation: zoomCard 0.5s forwards;
+.card__container1:hover,
+.card__container2:hover,
+.card__container3:hover {
+  animation: zoomCard 0.5s forwards;
 }
 
 .container-hover {
-    transition: filter 0.3s;
-    display: inline-block;
+  transition: filter 0.3s;
+  display: inline-block;
 }
 
-.container-hover:not(:hover){
-    filter: none;
+.container-hover:not(:hover) {
+  filter: none;
 }
-
-
-
-
 
 /* Section-services */
 
 /*  Formulaire de contact */
 
 .section-contact {
-    padding-top: 5%;
-    display: flex;
-    flex-direction: row;
-    gap: 20%;
-    position: relative;
-    justify-content: center;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  position: relative;
+  justify-content: center;
 }
 
 .icon-container3 {
-    position: absolute;
-    top: -10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-
-
-.section-contact > div{
-    isolation: isolate;
+.section-contact > div {
+  isolation: isolate;
 }
 
 /* Gestion de l'arrière plan */
 .section-contact::before {
-    background-image: url(Images/monstera-deliciosa-plant-leaves-garden.jpg);
-    background-size: cover;
-    content: "";
-    object-fit: cover;
-    position: absolute;
-    inset: 0;
-    opacity: 0.9;
-    z-index: 0;
-    background-attachment: fixed;
-  }
+  background-image: url(Images/monstera-deliciosa-plant-leaves-garden.jpg);
+  background-size: cover;
+  content: "";
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  opacity: 0.9;
+  z-index: 0;
+  background-attachment: fixed;
+}
 
 /* Gestion du formulaire de contact */
 .form-container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto auto;
-    text-align: center;
-    background-color: var(--cards-btn-form);
-    box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2),
-                    0 0 2px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
-    margin-left: 5% ;
-    padding: 2%;
-    width: 90%;
-    height: auto;
-    flex-direction: column;
-    justify-content: space-evenly;
-   
-    & h2 {
-        padding-bottom: 5px;
-    }
-    
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto auto;
+  text-align: center;
+  background-color: var(--cards-btn-form);
+  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  margin-left: 5%;
+  padding: 2%;
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
 
+  & h2 {
+    padding-bottom: 5px;
+  }
 }
 
 .form-title {
   grid-area: 1 / 1;
-    padding-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 form {
-    grid-area: 2 / 1;
-    width: 90%;
+  grid-area: 2 / 1;
+  width: 90%;
 }
 
 .info-contact {
-    grid-area: 2 / 2;
-    color: var(--texts);
-    margin-right: 5%;
-    padding: 2%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
- 
-    & h2 {
-        padding-bottom: 4%;
-    }
-    & h3 {
-        padding: 5% 0 2% 0;
-    } 
-    & ul {
-        padding-bottom: 8%;
-    }
-    & li {
-        padding-bottom: 2%;
-    }
-    & a {
-        text-transform: lowercase;
-        letter-spacing: normal;
-    }
+  grid-area: 2 / 2;
+  color: var(--texts);
+  margin-right: 5%;
+  padding: 2%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  & h2 {
+    padding-bottom: 4%;
+  }
+  & h3 {
+    padding: 5% 0 2% 0;
+  }
+  & ul {
+    padding-bottom: 8%;
+  }
+  & li {
+    padding-bottom: 2%;
+  }
+  & a {
+    text-transform: lowercase;
+    letter-spacing: normal;
+  }
 }
 
 /* Card Social Media */
 
 .card-social {
-    display: flex;
-    height: 70px;
-    width: 200px;
-    grid-area: 1 /2;
-    align-self: center;
-    justify-content: center;
+  display: flex;
+  height: 70px;
+  width: 200px;
+  grid-area: 1 /2;
+  align-self: center;
+  justify-content: center;
 }
-  
-  .card-social svg {
-    position: absolute;
-    display: flex;
-    width: 60%;
-    height: 100%;
-    font-weight: 700;
-    opacity: 1;
-    transition: opacity 0.25s;
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  .card-social .social-link1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    color: whitesmoke;
-    text-decoration: none;
-    transition: 0.25s;
-    border-radius: 50px;
-  }
-  
-  .card-social svg {
-    transform: scale(1);
-  }
-  
-  .card-social .social-link1:hover {
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    animation: bounce_613 0.4s linear;
-  }
+
+.card-social svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card-social .social-link1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card-social svg {
+  transform: scale(1);
+}
+
+.card-social .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
 
 /* Card Social Media */
 
 /* Gestion des inputs du formulaire et leurs animations */
 
 .group {
-    position: relative;
-    margin: 4% 2%;
-    padding: 10% 4%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-   }
-   
-   .input {
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--border);
-    background: transparent;
-   }
+  position: relative;
+  margin: 4% 2%;
+  padding: 10% 4%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus {
+.input {
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
   border: none;
   background-color: transparent;
   transition: background-color 5000s ease-in-out;
-  }
-   
-  .input:focus, #message:focus {
-   outline: none;
-  }
-  
-  label {
-   color: var(--texts);
-   letter-spacing: 2px;
-   font-size: 16px;
-   font-weight: normal;
-   position: absolute;
-   pointer-events: none;
-   left: 5px;
-   top: 10px;
-   transition: 0.2s ease all;
-   -moz-transition: 0.2s ease all;
-   -webkit-transition: 0.2s ease all;
-  }
+}
 
-  
-  .input:focus ~ label, .input:valid ~ label  {
-   top: -8%;
-   font-size: 14px;
-   color: var(--texts);
-  }
+.input:focus,
+#message:focus {
+  outline: none;
+}
 
-  #message ~label {
-    top: -8%;
-  }
+label {
+  color: var(--texts);
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
 
-  #message:focus ~ label {
-   top: -15%;
-  }
-  
-  .bar {
-   position: relative;
-   display: block;
-   width: 100%;
-  }
-  
-  .bar:before, .bar:after {
-   content: '';
-   height: 2px;
-   width: 0;
-   bottom: 1px;
-   position: absolute;
-   background: var(--border);
-   transition: 0.2s ease all;
-   -moz-transition: 0.2s ease all;
-   -webkit-transition: 0.2s ease all;
-  }
-  
-  .bar:before {
-   left: 50%;
-  }
-  
-  .bar:after {
-   right: 50%;
-  }
-  
-  .input:focus ~ .bar:before, .input:focus ~ .bar:after {
-   width: 50%;
-  }
-  
-  .highlight {
-   position: absolute;
-   height: 60%;
-   width: 100px;
-   top: 25%;
-   left: 0;
-   pointer-events: none;
-   opacity: 0.5;
-  }
-  
-  .input:focus ~ .highlight {
-   animation: inputHighlighter 0.3s ease;
-  }
-  #message {
-   width: 100%;
-   border: none;
-   border-bottom: 1px solid #515151;
-   background: transparent;
-  }
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -8%;
+  font-size: 14px;
+  color: var(--texts);
+}
+
+#message ~ label {
+  top: -8%;
+}
+
+#message:focus ~ label {
+  top: -15%;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(--border);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+#message {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
 
 /* Gestion des inputs du formulaire et leurs animations */
 
 /* Bouton CTA du formulaire et ses animations */
 
 .cta {
-    padding-top: 10%;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
-  .cta span {
-    color: var(--texts);
-    padding-bottom: 7px;
-    letter-spacing: 2px;
-    font-size: 18px;
-    padding-right: 15px;
-    text-transform: uppercase;
-  }
-  
-  .cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
-    fill: var(--border);
-  }
-  
-  .cta:hover svg {
-    transform: translateX(0);
-  }
-  
-  .cta:active svg {
-    transform: scale(0.9);
-  }
-  
-  .hover-underline-animation {
-    position: relative;
-    color:var(--border);
-    padding-bottom: 20px;
-  }
-  
-  .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 80%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--border);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+  padding-top: 10%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  color: var(--texts);
+  padding-bottom: 7px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  fill: var(--border);
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: var(--border);
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--border);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 /* Bouton CTA du formulaire et ses animations */
 
@@ -826,45 +828,41 @@ form {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   height: 10vh;
   margin: 0 5%;
   text-align: center;
 }
 
-footer a{
-  font-size: 0.4rem;
+footer a {
+  font-size: 0.6rem;
   padding-top: 1dvh;
 }
 
-
 .credits1 {
-grid-area: 2 / 2;
-justify-content: right;
+  grid-area: 2 / 2;
+  justify-content: right;
 }
 
 .credits2 {
   grid-area: 3 / 2;
 }
 
-
 .creator {
   place-items: center;
   grid-area: 1 / 2;
 }
-
-
 
 /* Footer */
 
 /* Variables Couleurs */
 
 html {
---background: hsl(30, 52%, 82%);
---texts: #405142 ;
---cards-btn-form: hsl(30, 52%, 85%);
---border: #405142 ;
+  --background: hsl(30, 52%, 82%);
+  --texts: #405142;
+  --cards-btn-form: hsl(30, 52%, 85%);
+  --border: #405142;
 }
 /* Variables Couleurs */
 
@@ -872,102 +870,100 @@ html {
 
 /* Keyframes des cards */
 @keyframes fadeInBlur {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-        filter:blur(20px)
-    }
-    1% {
-        visibility: visible;
-    }
-    100% {
-        opacity: 1;
-        filter: blur(0);
-    }
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    filter: blur(20px);
+  }
+  1% {
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
-@keyframes fadeOutBlur  {
-    
-    0% {
-        opacity: 1;
-        filter: blur(0);
-    }
-    100% {
-        opacity: 0;
-        filter:blur(20px)
-    }
+@keyframes fadeOutBlur {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(20px);
+  }
 }
 
 @keyframes zoomCard {
-    from {
-        transform: scale(1);
-        translate: 0 ;
-    }
-    to {
-        transform: scale(1.05);
-        translate: -30px;
-    }
+  from {
+    transform: scale(1);
+    translate: 0;
+  }
+  to {
+    transform: scale(1.05);
+    translate: -30px;
+  }
 }
 
 @keyframes grayscaleCard {
-    from {
-        filter: grayscale(0%);
-    }
-    to {
-        filter: grayscale(100%);
-    }
+  from {
+    filter: grayscale(0%);
+  }
+  to {
+    filter: grayscale(100%);
+  }
 }
-
 
 /* Keyframes des cards */
 
 /* Keframes inputs formulaire de contact */
 @keyframes inputHighlighter {
-    from {
-     background: var(--texts);
-    }
-   
-    to {
-     width: 0;
-     background: transparent;
-    }
-   }
+  from {
+    background: var(--texts);
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
 /* Keframes inputs formulaire de contact */
 
 /* Keyframes Social */
 @keyframes bounce_613 {
-    40% {
-      transform: scale(1.4);
-    }
-  
-    60% {
-      transform: scale(0.8);
-    }
-  
-    80% {
-      transform: scale(1.2);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
+  40% {
+    transform: scale(1.4);
   }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 /* Keyframes Social */
 
 /* Animation Keyframes */
 /* Animation Liste trouble */
 
 .text-item.aos-init {
-    opacity: 0;
-    filter: blur(20px);
+  opacity: 0;
+  filter: blur(20px);
 }
 
 .text-item.aos-animate {
-    animation: fadeInBlur 1s ease forwards;
+  animation: fadeInBlur 1s ease forwards;
 }
 
 .text-item.out-of-viewport {
-    animation: fadeOutBlur 4s ease forwards ;
+  animation: fadeOutBlur 4s ease forwards;
 }
 
 /* Animation Liste trouble */
@@ -976,162 +972,152 @@ html {
 
 /* Smartphone */
 @media screen and (max-width: 767px) {
-    header{ 
-        display: none;
-    }
+  header {
+    display: none;
+  }
 
-    .accueil-introduction {
-      height: 100dvh;
-      padding: 14px;
-    }
-    
-    section, .bloc-intro h1, .grid-intro {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      gap: 30px;
-      object-fit: cover;
-     }
+  .accueil-introduction {
+    height: 100dvh;
+    padding: 14px;
+  }
 
-     .section-margaux h1 {
-      padding-bottom: 0;
-     }
+  section,
+  .bloc-intro h1,
+  .grid-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    object-fit: cover;
+  }
 
-     .section-margaux img {
-      width: 80%;
-     }
+  .section-margaux h1 {
+    padding-bottom: 0;
+  }
 
-     .section-tous::before {
-      background-size: contain;
-      background-attachment: fixed;
-      content: "";
-      position: absolute;
-      inset: 0;
-      opacity: 0.7;
-      z-index: 0;
-    }
+  .section-margaux img {
+    width: 80%;
+  }
 
-     .btn_rdv {
-      text-align: center;
-     }
-    
-     video {
-      height: 100%;
-     }
+  .section-tous::before {
+    background-size: contain;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+    z-index: 0;
+  }
 
-    .bloc-intro h1, .btn_rdv a {
-        color: var(--texts);
-    }
+  .btn_rdv {
+    text-align: center;
+  }
 
-    .btn_rdv a:last-child {
-        border: 1px solid var(--border);
-        padding: 3% 3%;
-        text-align: center;
-    }
+  video {
+    height: 100%;
+  }
 
-    .separator {
-        display: none;
-    }
+  .bloc-intro h1,
+  .btn_rdv a {
+    color: var(--texts);
+  }
+
+  .btn_rdv a:last-child {
+    border: 1px solid var(--border);
+    padding: 3% 3%;
+    text-align: center;
+  }
+
+  .separator {
+    display: none;
+  }
 
   .grid-section-naturo {
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      & img {
-          filter: none;
-          display: block;
-          margin: 0 auto;
-          max-width: 80%;
-      }
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    & img {
+      filter: none;
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+    }
   }
-    
-    .div3 img {
-        width: 309px;
-        height: 290px ;
-        object-fit: cover;
+
+  .div3 img {
+    width: 309px;
+    height: 290px;
+    object-fit: cover;
+  }
+
+  .liste-trouble {
+    gap: 10px;
+    margin: 2dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-services {
+    display: flex;
+    flex-direction: column;
+    gap: 4dvh;
+
+    & h1 {
+      padding-bottom: 4dvh;
     }
+  }
 
-    .liste-trouble {
-      gap: 10px;
-      margin: 2dvh;
-      display: flex;
-      flex-direction: column;
+  .card__container {
+    height: auto;
+  }
+
+  .card__container {
+    object-position: bottom right;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+      padding-top: 10% 4%;
+      margin: 4% 2%;
     }
+  }
 
-    .section-services {
-        display: flex;
-        flex-direction: column;
-        gap: 4dvh;
+  .cta {
+    padding: 0 0 20% 0;
+  }
 
-        & h1 {
-            padding-bottom: 4dvh;
-        }
+  .info-contact {
+    margin: 0;
+
+    & h2,
+    h3 {
+      text-align: center;
+      padding: 5% 0;
     }
+  }
 
-    .card__container {
-        height: auto;
-    }
+  .card-social {
+    justify-content: center;
+  }
 
-    .card__container  {
-        object-position: bottom right;
-    }
-
-    .form-container {
-        display: flex;
-        flex-direction: column;
-
-        & h2 {
-          padding-top: 10% 4%;
-          margin: 4% 2%;
-        } 
-    }
-
-    .cta {
-      padding: 0 0 20% 0;
-    }
-
-    .info-contact  {
-      margin: 0;
-
-      & h2, h3 {
-        text-align: center;
-        padding: 5% 0;
-      }
-    }
-
-    .card-social {
-      justify-content: center;
-    }
-
-    .section-contact::before {
-      background-image: url(Images/monstera-deliciosa-plant-leaves-garden.jpg);
-      background-size: contain;
-    }
+  .section-contact::before {
+    background-image: url(Images/monstera-deliciosa-plant-leaves-garden.jpg);
+    background-size: contain;
+  }
 }
 
-
-
 /* Tablettes */
-@media screen and (min-width:767px) and (max-width: 1023px) {
-    
+@media screen and (min-width: 767px) and (max-width: 1023px) {
 }
 
 /* Bureau */
 
-@media screen and (min-width:1024px) {
-    
+@media screen and (min-width: 1024px) {
 }
 
-
-  
-
-
 /* Test */
-
-
-
-
-
-
