@@ -30,35 +30,41 @@ a {
   text-decoration: none;
   color: var(--texts);
   font-weight: 400;
-  font-size: 0.875rem, 2vw, 1rem;
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
   font-weight: bold;
-  background: linear-gradient(to top, #648c63 0%, #648c63 2px, transparent 3px) no-repeat;
+  background: linear-gradient(to top, #648c63 0%, #648c63 3px, transparent 3px) no-repeat;
   background-size: 0 100%;
 }
 
 h1 {
   letter-spacing: 8px;
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(1rem, 4vw, 2.75rem);
   padding: 3% 0;
 }
 
 h2 {
   font-size: clamp(1.375rem, 3.5vw, 2.5rem);
+  padding: 3% 0;
 }
 
 h3 {
-  font-size: clamp(1rem, 1.8vw, 1.5rem);
-  padding: 10% 2%;
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  margin: 5%;
 }
 
 p {
   letter-spacing: 2px;
-  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
   line-height: clamp(1.2em, 2.5vw, 1.5em);
 }
 
 ul {
   list-style-type: none;
+}
+
+li a {
+  display: flex;
+  justify-content: center;
 }
 
 section {
@@ -83,7 +89,7 @@ header {
 
 .header_logo {
   font-weight: 500;
-  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-size: clamp(0.75rem, 1.5vw, 2rem);
   margin-right: 50px;
   transition: color 0.4s ease-in-out;
 }
@@ -94,7 +100,6 @@ header {
 }
 .header_menu a {
   margin-left: 5vw;
-  padding-bottom: 3px;
   position: relative;
   transition: color 0.4s ease-in-out;
 }
@@ -168,11 +173,13 @@ video {
 .btn_rdv a {
   color: white;
 }
+
 .btn_rdv a:last-child {
   border: 1px solid white;
-  padding: 20px 40px;
+  padding: 20px 20px;
   transition: 0.5s;
 }
+
 .btn_rdv a:last-child:hover {
   /* Gère le changement de couleur du btn rdv et des liens du header */
   background-color: var(--cards-btn-form);
@@ -404,7 +411,7 @@ video {
 .section-services img {
   opacity: 0.7;
   width: 100%;
-  height: 55%;
+  height: 300px;
   max-height: 349px;
   object-fit: cover;
   border-radius: 1.5em;
@@ -426,8 +433,8 @@ video {
   flex-direction: column;
   text-align: center;
   background-color: var(--cards-btn-form);
-  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(50%, 70vw, 80%);
+  box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.19);
+  width: clamp(30%, 40vw, 80%);
   height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
@@ -439,8 +446,8 @@ video {
   flex-direction: column;
   text-align: center;
   background-color: var(--cards-btn-form);
-  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(50%, 70vw, 80%);
+  box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.19);
+  width: clamp(30%, 40vw, 80%);
   height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
@@ -452,8 +459,8 @@ video {
   flex-direction: column;
   text-align: center;
   background-color: var(--cards-btn-form);
-  box-shadow: 30px 15px 10px 0px rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(50%, 70vw, 80%);
+  box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.19);
+  width: clamp(30%, 40vw, 80%);
   height: auto;
   border-radius: 1.5rem;
   transition: transform 0.3s;
@@ -463,6 +470,7 @@ video {
 .card__price {
   font-weight: bold;
   padding: 0 2% 10% 2%;
+  font-size: clamp(0.725rem, 1.25rem, 1.5rem);
 }
 
 .card__container1:hover,
@@ -950,7 +958,6 @@ html {
 }
 /* Keyframes Social */
 
-/* Animation Keyframes */
 /* Animation Liste trouble */
 
 .text-item.aos-init {
@@ -966,12 +973,10 @@ html {
   animation: fadeOutBlur 4s ease forwards;
 }
 
-/* Animation Liste trouble */
-
-/* Responsive  */
+/* RESPONSIVE  */
 
 /* Smartphone */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 579px) {
   header {
     display: none;
   }
@@ -998,7 +1003,7 @@ html {
   }
 
   .section-margaux img {
-    width: 80%;
+    width: 60%;
   }
 
   .section-tous::before {
@@ -1112,7 +1117,157 @@ html {
 }
 
 /* Tablettes */
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+@media screen and (min-width: 580px) and (max-width: 1023px) {
+  /* header */
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .header_logo {
+    margin: 0;
+  }
+
+  .header_menu li a {
+    font-size: 0.6rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    object-fit: cover;
+  }
+
+  /* Section Accueil-Introduction */
+  .accueil-introduction {
+    height: 100dvh;
+    padding: 14px;
+  }
+
+  .btn_rdv a:last-child {
+    padding: 20px 20px;
+    transition: 0.5s;
+    font-size: 1rem;
+  }
+
+  /* Section Margaux */
+
+  .section-margaux {
+    margin-top: 50px;
+  }
+
+  section-margaux h1 {
+    text-align: center;
+  }
+
+  .section-margaux img {
+    width: 100%;
+  }
+
+  .section-tous::before {
+    background-size: contain;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+    z-index: 0;
+  }
+
+  video {
+    height: 90%;
+    opacity: 0.4;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  /* Section naturo */
+
+  .section-naturo {
+    text-align: center;
+  }
+
+  .grid-section-naturo {
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    & img {
+      filter: none;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      max-width: 50%;
+    }
+  }
+
+  .div3 img {
+    width: 309px;
+    height: 290px;
+    object-fit: cover;
+  }
+
+  .liste-trouble {
+    gap: 10px;
+    margin: 2dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-services {
+    display: flex;
+    flex-direction: column;
+    gap: 4dvh;
+
+    & h1 {
+      padding-bottom: 4dvh;
+    }
+  }
+
+  .card__container {
+    height: auto;
+  }
+
+  .card__container {
+    object-position: bottom right;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+      padding-top: 10% 4%;
+      margin: 4% 2%;
+    }
+  }
+
+  .cta {
+    padding: 0 0 20% 0;
+  }
+
+  .info-contact {
+    margin: 0;
+
+    & h2,
+    h3 {
+      text-align: center;
+      padding: 5% 0;
+    }
+  }
+
+  .card-social {
+    justify-content: center;
+  }
+
+  .section-contact::before {
+    background-image: url(Images/monstera-deliciosa-plant-leaves-garden.jpg);
+    background-size: contain;
+  }
 }
 
 /* Bureau */
