@@ -48,7 +48,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  font-size: clamp(0.75rem, 1.8vw, 1.5rem);
   margin: 5%;
 }
 
@@ -400,7 +400,7 @@ video {
   place-items: center;
   row-gap: 1%;
 
-  & h1 {
+  & h2 {
     grid-area: 1 / 2;
     text-align: center;
   }
@@ -421,11 +421,11 @@ video {
   display: grid;
   gap: 2dvh;
   grid-template-rows: repeat(3, auto);
+  padding: 10px;
 }
 
 .card__content p {
-  font-size: clamp(0.725rem, 1rem, 1.125rem);
-  padding: 0 2%;
+  font-size: clamp(0.25rem, 1rem, 1.125rem);
 }
 
 .card__container1 {
@@ -434,8 +434,8 @@ video {
   text-align: center;
   background-color: var(--cards-btn-form);
   box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(30%, 40vw, 80%);
-  height: auto;
+  width: clamp(50%, 50vw, 80%);
+  height: 508px;
   border-radius: 1.5rem;
   transition: transform 0.3s;
   grid-area: 2 / 1;
@@ -447,8 +447,8 @@ video {
   text-align: center;
   background-color: var(--cards-btn-form);
   box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(30%, 40vw, 80%);
-  height: auto;
+  width: clamp(50%, 50vw, 80%);
+  height: 508px;
   border-radius: 1.5rem;
   transition: transform 0.3s;
   grid-area: 2 / 2;
@@ -460,8 +460,8 @@ video {
   text-align: center;
   background-color: var(--cards-btn-form);
   box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.2), 0 0 1px 0 rgba(0, 0, 0, 0.19);
-  width: clamp(30%, 40vw, 80%);
-  height: auto;
+  width: clamp(50%, 50vw, 80%);
+  height: 508px;
   border-radius: 1.5rem;
   transition: transform 0.3s;
   grid-area: 2 / 3;
@@ -477,6 +477,7 @@ video {
 .card__container2:hover,
 .card__container3:hover {
   animation: zoomCard 0.5s forwards;
+  box-shadow: none;
 }
 
 .container-hover {
@@ -977,15 +978,7 @@ html {
 
 /* Smartphone */
 @media screen and (max-width: 579px) {
-  header {
-    display: none;
-  }
-
-  .accueil-introduction {
-    height: 100dvh;
-    padding: 14px;
-  }
-
+  /* SECTION - DISPLAY  */
   section,
   .bloc-intro h1,
   .grid-intro {
@@ -996,6 +989,18 @@ html {
     text-align: center;
     gap: 30px;
     object-fit: cover;
+  }
+
+  /* HEADER */
+  header {
+    display: none;
+  }
+
+  /* SECTION INTRODUCTION  */
+
+  .accueil-introduction {
+    height: 100dvh;
+    padding: 14px;
   }
 
   .section-margaux h1 {
@@ -1039,6 +1044,8 @@ html {
     display: none;
   }
 
+  /* SECTION NATURO */
+
   .grid-section-naturo {
     display: flex;
     flex-direction: column;
@@ -1064,6 +1071,8 @@ html {
     flex-direction: column;
   }
 
+  /* SECTION SERVICES */
+
   .section-services {
     display: flex;
     flex-direction: column;
@@ -1074,12 +1083,28 @@ html {
     }
   }
 
-  .card__container {
-    height: auto;
+  .card__container1 {
+    object-position: bottom right;
+    height: 480px;
   }
 
-  .card__container {
+  .card__container2 {
     object-position: bottom right;
+    height: 480px;
+  }
+
+  .card__container3 {
+    object-position: bottom right;
+    height: 480px;
+  }
+
+  .card__content p {
+    font-size: clamp(0.25rem, 0.75rem, 1.125rem);
+    padding: 0 2%;
+  }
+
+  .card__price {
+    font-size: clamp(0.5rem, 1rem, 1.125rem);
   }
 
   .form-container {
