@@ -30,7 +30,6 @@ a {
   text-decoration: none;
   color: var(--texts);
   font-weight: 400;
-  font-size: clamp(0.5rem, 1.5vw, 1rem);
   font-weight: bold;
   background: linear-gradient(to top, #648c63 0%, #648c63 3px, transparent 3px) no-repeat;
   background-size: 0 100%;
@@ -38,17 +37,17 @@ a {
 
 h1 {
   letter-spacing: 8px;
-  font-size: clamp(1rem, 2.5rem, 2.75rem);
+  font-size: 30px;
   padding: 3% 0;
 }
 
 h2 {
-  font-size: clamp(1.375rem, 2rem, 2.5rem);
+  font-size: 24px;
   padding: 3% 0;
 }
 
 h3 {
-  font-size: clamp(0.75rem, 1.25vw, 1.5rem);
+  font-size: 18px;
   margin: 5%;
 }
 
@@ -668,7 +667,7 @@ form {
 .group {
   position: relative;
   margin: 4% 2%;
-  padding: 10% 4%;
+  padding: 8% 4%;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -984,6 +983,17 @@ html {
 
 /* Smartphone */
 @media screen and (max-width: 579px) {
+  /* General */
+  h2 {
+    padding-bottom: 0;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
   /* SECTION - DISPLAY  */
   section,
   .bloc-intro h1,
@@ -992,7 +1002,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+
     gap: 30px;
     object-fit: cover;
   }
@@ -1009,9 +1019,21 @@ html {
     padding: 14px;
   }
 
-  .section-margaux h1 {
-    padding-bottom: 0;
+  .bloc-intro h1,
+  .btn_rdv a {
+    color: white;
   }
+
+  .btn_rdv a:last-child {
+    border: 1px solid white;
+    padding: 3% 3%;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  /* SECTION MARGAUX */
 
   .section-margaux img {
     width: 60%;
@@ -1028,26 +1050,11 @@ html {
   }
 
   .btn_rdv {
-    text-align: center;
+    text-align: right;
   }
 
   video {
     height: 100%;
-  }
-
-  .bloc-intro h1,
-  .btn_rdv a {
-    color: var(--texts);
-  }
-
-  .btn_rdv a:last-child {
-    border: 1px solid var(--border);
-    padding: 3% 3%;
-    text-align: center;
-  }
-
-  .separator {
-    display: none;
   }
 
   /* SECTION NATURO */
@@ -1064,10 +1071,16 @@ html {
     }
   }
 
-  .div3 img {
-    width: 309px;
-    height: 290px;
+  .section-naturo .div1 .div3 .div5 {
+    width: 80%;
+    height: 300px;
+  }
+
+  .section-naturo img {
+    width: 80%;
+    height: 300px;
     object-fit: cover;
+    margin-top: 30px;
   }
 
   .liste-trouble {
@@ -1091,27 +1104,45 @@ html {
 
   .card__container1 {
     object-position: bottom right;
-    height: 480px;
+    width: 50%;
+    height: 400px;
+  }
+  .card__container1 img {
+    height: 200px;
   }
 
   .card__container2 {
     object-position: bottom right;
-    height: 480px;
+    width: 50%;
+    height: 400px;
+  }
+  .card__container2 img {
+    height: 200px;
   }
 
   .card__container3 {
     object-position: bottom right;
-    height: 480px;
+    width: 50%;
+    height: 400px;
+  }
+  .card__container3 img {
+    height: 200px;
+  }
+
+  .card__title h3 {
+    font-size: 14px;
   }
 
   .card__content p {
-    font-size: clamp(0.25rem, 0.75rem, 1.125rem);
+    font-size: 0.75rem;
     padding: 0 2%;
   }
 
   .card__price {
-    font-size: clamp(0.5rem, 1rem, 1.125rem);
+    font-size: 1rem;
   }
+
+  /* Form */
 
   .form-container {
     display: flex;
@@ -1148,7 +1179,7 @@ html {
 }
 
 /* Tablettes */
-@media screen and (min-width: 580px) and (max-width: 1023px) {
+@media screen and (min-width: 580px) and (max-width: 1030px) {
   /* header */
 
   header {
@@ -1187,14 +1218,22 @@ html {
 
   .section-margaux {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 
-  section-margaux h1 {
+  .grid-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .section-margaux h2 {
     text-align: center;
+    font-size: 30px;
   }
 
   .section-margaux img {
-    width: 100%;
+    width: 50%;
   }
 
   .section-tous::before {
@@ -1231,13 +1270,25 @@ html {
       filter: none;
       display: block;
       margin: 0 auto;
-      margin-bottom: 20px;
+      margin-top: 30px;
       max-width: 50%;
     }
   }
 
+  .div1 img {
+    width: 310px;
+    height: 290px;
+    object-fit: cover;
+  }
+
   .div3 img {
-    width: 309px;
+    width: 310px;
+    height: 290px;
+    object-fit: cover;
+  }
+
+  .div5 img {
+    width: 310px;
     height: 290px;
     object-fit: cover;
   }
@@ -1249,6 +1300,8 @@ html {
     flex-direction: column;
   }
 
+  /* SECTION SERVICES */
+
   .section-services {
     display: flex;
     flex-direction: column;
@@ -1259,13 +1312,47 @@ html {
     }
   }
 
-  .card__container {
-    height: auto;
+  .card__container1 {
+    object-position: bottom right;
+    width: 40%;
+    height: 600px;
+  }
+  .card__container1 img {
+    height: 400px;
   }
 
-  .card__container {
+  .card__container2 {
     object-position: bottom right;
+    width: 40%;
+    height: 600px;
   }
+  .card__container2 img {
+    height: 400px;
+  }
+
+  .card__container3 {
+    object-position: bottom right;
+    width: 40%;
+    height: 600px;
+  }
+  .card__container3 img {
+    height: 400px;
+  }
+
+  .card__title h3 {
+    font-size: 24px;
+  }
+
+  .card__content p {
+    font-size: 18px;
+    padding: 0 2%;
+  }
+
+  .card__price {
+    font-size: 20px;
+  }
+
+  /* Form */
 
   .form-container {
     display: flex;
@@ -1277,8 +1364,15 @@ html {
     }
   }
 
-  .cta {
-    padding: 0 0 20% 0;
+  .ctaBlock {
+    display: flex;
+    align-items: center;
+
+    margin-left: 2%;
+  }
+
+  .ctaBlock .cta {
+    padding: 0;
   }
 
   .info-contact {
@@ -1287,8 +1381,12 @@ html {
     & h2,
     h3 {
       text-align: center;
-      padding: 5% 0;
     }
+  }
+
+  .info-contact li a {
+    margin-top: 10px;
+    font-size: 20px;
   }
 
   .card-social {
